@@ -1,12 +1,12 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
-import Hello from './components/Hello'
+import { useState } from "react";
+import "./App.css";
+import Hello from "./components/Hello";
+
+const reactLogo = "/static/react.svg";
+const viteLogo = "/static/vite.svg";
 
 function App() {
-  const [count, setCount] = useState(0)
-console.log("object");
+  const [count, setCount] = useState(0);
 
   return (
     <>
@@ -32,7 +32,7 @@ console.log("object");
       </p>
       <Hello></Hello>
     </>
-  )
+  );
 }
 
-export default App
+export default App;
