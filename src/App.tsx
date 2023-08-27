@@ -1,10 +1,18 @@
-import "./styles/index.css"
+import "./styles/index.css";
+import { Routes, Route } from "react-router-dom";
+
+import store from "./store";
+import { Provider } from "react-redux";
+
+import { Home } from "./routes/Home";
 
 function App() {
   return (
-    <>
-      <h1 className="text-red-500 text-2xl">Hello World</h1>
-    </>
+    <Provider store={store}>
+      <Routes>
+        <Route path="/" element={<Home />}></Route>
+      </Routes>
+    </Provider>
   );
 }
 
