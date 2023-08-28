@@ -1,6 +1,6 @@
 
 export const Navbar = () => {
   return (
-    <div>Navbar</div>
+    <nav className="w-full shadow-sm fixed py-10">Navbar</nav>
   )
 }
