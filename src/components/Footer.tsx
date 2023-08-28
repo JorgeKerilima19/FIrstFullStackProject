@@ -1,6 +1,6 @@
 export const Footer = () => {
   return (
-    <footer className="absolute w-full bottom-0 pb-10">
+    <footer className="absolute w-full bottom-0 pb-10 bg-red-700 text-white">
       <div className="absolute transform translate-y-[-40px] translate-x-[50%] bg-green-700 w-6/12">
         NewsLetter
       </div>
