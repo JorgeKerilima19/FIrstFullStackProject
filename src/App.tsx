@@ -5,8 +5,16 @@ import store from "./store";
 import { Provider } from "react-redux";
 
 import Layout from "./majorComponents/Layout";
-import { HomePage } from "./routes/HomePage";
 import { Error } from "./routes/Error";
+import {
+  HomePage,
+  About,
+  Blog,
+  Careers,
+  Contact,
+  Services,
+  Cases,
+} from "./routes";
 
 function App() {
   return (
@@ -14,6 +22,12 @@ function App() {
       <Routes>
         <Route path="/" element={<Layout />}>
           <Route index element={<HomePage />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/blog" element={<Blog />} />
+          <Route path="/careers" element={<Careers />} />
+          <Route path="/cases" element={<Cases />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="/services" element={<Services />} />
         </Route>
         <Route path="/*" element={<Error />} />
       </Routes>

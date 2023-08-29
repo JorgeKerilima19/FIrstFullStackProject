@@ -11,22 +11,34 @@ export const Navbar = () => {
       <div className="flex items-center gap-7 pr-10">
         <ul className="flex gap-10 items-center h-full">
           <li>
-            <Link className="px-2" to={"/service"}>Cases</Link>
+            <Link className="px-2" to={"/cases"}>
+              Cases
+            </Link>
           </li>
           <li>
-            <Link className="px-2" to={"/service"}>Services</Link>
+            <Link className="px-2" to={"/services"}>
+              Services
+            </Link>
           </li>
           <li>
-            <Link className="px-2" to={"/service"}>About us</Link>
+            <Link className="px-2" to={"/about"}>
+              About us
+            </Link>
           </li>
           <li>
-            <Link className="px-2" to={"/service"}>Careers</Link>
+            <Link className="px-2" to={"/careers"}>
+              Careers
+            </Link>
           </li>
           <li>
-            <Link className="px-2" to={"/service"}>Blog</Link>
+            <Link className="px-2" to={"/blog"}>
+              Blog
+            </Link>
           </li>
           <li>
-            <Link className="px-2" to={"/service"}>Contact us</Link>
+            <Link className="px-2" to={"/contact"}>
+              Contact us
+            </Link>
           </li>
         </ul>
         <button className="bg-transparent hover:bg-white-50 text-red-700 font-semibold hover:text-white py-2 px-4 border border-red-700 hover:border-transparent hover:bg-red-700 rounded">
