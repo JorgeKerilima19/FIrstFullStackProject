@@ -2,7 +2,11 @@
 export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
-    extend: {},
+    extend: {
+      minHeight:{
+        "vh":"calc(100vh - var(--header-height))"
+      }
+    },
   },
   plugins: [],
 };
