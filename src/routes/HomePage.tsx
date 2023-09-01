@@ -1,6 +1,5 @@
 import TypewriterComponent from "typewriter-effect";
-import { Navbar } from "../components/homepage";
-import { Features } from "../components/homepage/Features";
+import { Navbar, Features } from "../components/homepage";
 
 export const HomePage = () => {
   return (
