@@ -4,15 +4,20 @@ import { useState, useEffect } from "react";
 import logo from "../assets/images/logo.svg";
 
 export const Navbar = () => {
-  const [showNavbar, setShowNavbar] = useState(false);
+  const [showNavbar, setShowNavbar] = useState<boolean>(true);
+  const [prevScrollY, setPrevScrollY] = useState(0);
 
   useEffect(() => {
     const handleScroll = () => {
-      if (window.scrollY > 10) {
-        setShowNavbar(true);
-      } else {
+      const currentScrollY = window.scrollY;
+
+      if (currentScrollY > prevScrollY) {
         setShowNavbar(false);
+      } else {
+        setShowNavbar(true);
       }
+
+      setPrevScrollY(currentScrollY);
     };
 
     window.addEventListener("scroll", handleScroll);
@@ -20,19 +25,29 @@ export const Navbar = () => {
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
-  }, []);
+  }, [prevScrollY]);
 
   return (
     <nav
-      className={`w-full bg-white-500 shadow-sm shadow-red-500/40 fixed flex ${
-        showNavbar ? "-translate-y-16" : ""
-      } p-2 transition-transform duration-500  justify-between`}
+      className={`w-full bg-white-500 shadow-sm shadow-red-700 fixed top-0 flex transform ${
+        !showNavbar ? "-translate-y-16 bg-red-700" : ""
+      } transition-transform duration-1000 ease-in-out p-2 justify-between`}
     >
       <div className="flex gap-2 items-center">
         <img src={logo} alt="logo" width={50} />
-        <h1 className="text-black-50 font-bold text-2xl">DNews</h1>
+        <h1
+          className={`text-black-50 font-bold text-2xl ${
+            showNavbar ? "" : "text-white"
+          }`}
+        >
+          DNews
+        </h1>
       </div>
-      <div className="flex items-center gap-7 pr-10">
+      <div
+        className={`flex items-center gap-7 pr-10 ${
+          showNavbar ? "" : "hidden"
+        }`}
+      >
         <ul className="flex gap-10 items-center h-full">
           <li>
             <Link className="px-2" to={"/cases"}>
