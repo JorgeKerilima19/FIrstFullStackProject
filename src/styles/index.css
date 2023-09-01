@@ -3,5 +3,5 @@
 @tailwind utilities;
 
 :root {
-  --header-height: 8rem;
+  --header-height: 5rem;
 }

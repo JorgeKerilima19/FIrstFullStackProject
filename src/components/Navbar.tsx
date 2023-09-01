@@ -1,9 +1,33 @@
 import { Link } from "react-router-dom";
+import { useState, useEffect } from "react";
+
 import logo from "../assets/images/logo.svg";
 
 export const Navbar = () => {
+  const [showNavbar, setShowNavbar] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 10) {
+        setShowNavbar(true);
+      } else {
+        setShowNavbar(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   return (
-    <nav className="w-full bg-white-500 shadow-sm shadow-red-500/40 sticky top-0 p-2 flex justify-between">
+    <nav
+      className={`w-full bg-white-500 shadow-sm shadow-red-500/40 fixed flex ${
+        showNavbar ? "-translate-y-16" : ""
+      } p-2 transition-transform duration-500  justify-between`}
+    >
       <div className="flex gap-2 items-center">
         <img src={logo} alt="logo" width={50} />
         <h1 className="text-black-50 font-bold text-2xl">DNews</h1>
