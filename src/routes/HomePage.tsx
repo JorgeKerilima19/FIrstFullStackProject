@@ -1,5 +1,6 @@
 import TypewriterComponent from "typewriter-effect";
 import { Navbar } from "../components/homepage";
+import { Features } from "../components/homepage/Features";
 
 export const HomePage = () => {
   return (
@@ -18,7 +19,9 @@ export const HomePage = () => {
         </div>
         <Navbar />
       </section>
-      <section className="relative min-h-vh flex flex-col justify-center gap-12"></section>
+      <section className="relative min-h-vh flex flex-col justify-center gap-12">
+        <Features />
+      </section>
     </div>
   );
 };
