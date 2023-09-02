@@ -1,4 +1,4 @@
-import { FeatureCard } from ".";
+import { Card } from "..";
 
 import img from "../../../src/assets/images/svg/1.svg";
 
@@ -41,7 +41,7 @@ export const Features = () => {
       <div className="grid gap-10 xl:grid-cols-2">
         <div className="grid lg:grid-cols-2 gap-20">
           {features.map((feature) => (
-            <FeatureCard feature={feature} />
+            <Card key={feature.title} feature={feature} />
           ))}
         </div>
       </div>

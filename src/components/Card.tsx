@@ -1,6 +1,6 @@
-import { ChildProps } from "../Interfaces";
+import { ChildProps } from "./Interfaces";
 
-export const FeatureCard = ({ feature }: ChildProps) => {
+export const Card = ({ feature }: ChildProps) => {
   return (
     <article className="w-full sm:w-80">
       <img src={feature.img} alt="" />

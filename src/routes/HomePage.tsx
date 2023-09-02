@@ -3,7 +3,7 @@ import { Navbar, Features } from "../components/homepage";
 
 export const HomePage = () => {
   return (
-    <div>
+    <>
       <section className="relative min-h-vh flex flex-col justify-center gap-12">
         <div className="flex text-7xl gap-2 pl-10">
           <span>Info for those </span>
@@ -21,6 +21,6 @@ export const HomePage = () => {
       <section className="relative min-h-vh flex flex-col justify-center gap-12">
         <Features />
       </section>
-    </div>
+    </>
   );
 };
