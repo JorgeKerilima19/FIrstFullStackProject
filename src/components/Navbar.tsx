@@ -29,11 +29,11 @@ export const Navbar = () => {
 
   return (
     <nav
-      className={`w-full bg-white-500 shadow-sm shadow-red-700 fixed top-0 flex transform ${
+      className={`w-full z-10 bg-white-500 shadow-sm shadow-red-700 fixed top-0 flex transform ${
         !showNavbar ? "-translate-y-16 bg-red-700" : ""
       } transition-transform duration-1000 ease-in-out p-2 justify-between`}
     >
-      <div className="flex gap-2 items-center">
+      <Link to={"/"} className="flex gap-2 items-center">
         <img src={logo} alt="logo" width={50} />
         <h1
           className={`text-black-50 font-bold text-2xl ${
@@ -42,7 +42,7 @@ export const Navbar = () => {
         >
           DNews
         </h1>
-      </div>
+      </Link>
       <div
         className={`flex items-center gap-7 pr-10 ${
           showNavbar ? "" : "hidden"
