@@ -52,8 +52,8 @@ const services = [
 
 export const Services = () => {
   return (
-    <section className="pl-10">
-      <div className="pl-10 relative min-h-vh flex gap-10 items-center">
+    <section>
+      <div className="relative min-h-vh flex gap-10 items-center">
         <div className="flex flex-col gap-10">
           <h2 className="text-6xl">Our Services</h2>
           <span className="font-light text-lg">
@@ -65,11 +65,11 @@ export const Services = () => {
       </div>
       <div className="grid gap-y-20 w-full">
         {services.map((el) => (
-          <article className="grid gap-y-20">
+          <article key={el.title} className="grid gap-y-20">
             <header className="text-4xl font-semibold">{el.title}</header>
-            <div className="w-full flex gap-10">
-              {el.chars.map((char) => (
-                <Card feature={char} />
+            <div className="w-full flex gap-10 flex-wrap">
+              {el.chars.map((char, index) => (
+                <Card key={index} feature={char} />
               ))}
             </div>
           </article>

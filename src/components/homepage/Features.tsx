@@ -25,8 +25,8 @@ const features = [
 
 export const Features = () => {
   return (
-    <div className="flex flex-col gap-20 pl-5 md:pl-20">
-      <div className="flex flex-wrap px-5">
+    <div className="flex flex-col gap-20">
+      <div className="flex flex-wrap">
         <h3 className="text-4xl pr-20 font-medium self-start">
           Why Choose Us?
         </h3>

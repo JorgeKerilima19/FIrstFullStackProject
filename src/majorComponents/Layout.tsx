@@ -7,7 +7,7 @@ export const Layout = () => {
       <header>
         <Navbar />
       </header>
-      <main className="min-h-screen py-20">
+      <main className="min-h-screen py-20 px-10">
         <Outlet />
       </main>
       <Footer />

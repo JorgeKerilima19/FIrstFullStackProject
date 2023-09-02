@@ -5,7 +5,7 @@ export const HomePage = () => {
   return (
     <>
       <section className="relative min-h-vh flex flex-col justify-center gap-12">
-        <div className="flex text-7xl gap-2 pl-10">
+        <div className="flex text-7xl gap-2">
           <span>Info for those </span>
           <TypewriterComponent
             options={{
