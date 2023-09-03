@@ -42,7 +42,7 @@ const breakPoints = [
 
 export const CasesList = () => {
   return (
-    <Carousel isRTL={false} breakPoints={breakPoints}>
+    <Carousel isRTL={false} breakPoints={breakPoints} itemPadding={[0, 10]}>
       {posts.map((feature, index) => (
         <CaseCard key={index} feature={feature} />
       ))}

@@ -27,7 +27,7 @@ export const Features = () => {
   return (
     <div className="flex flex-col gap-20">
       <div className="flex flex-wrap">
-        <h3 className="text-4xl pr-20 font-medium self-start">
+        <h3 className="text-4xl pr-20 font-medium self-start pb-10">
           Why Choose Us?
         </h3>
         <p className="text-lg font-light w-full md:w-3/5 lg:w-3/5">
@@ -40,8 +40,8 @@ export const Features = () => {
       </div>
       <div className="grid gap-10 xl:grid-cols-2">
         <div className="grid lg:grid-cols-2 gap-20">
-          {features.map((feature) => (
-            <Card key={feature.title} feature={feature} />
+          {features.map((feature, index) => (
+            <Card key={index} feature={feature} />
           ))}
         </div>
       </div>
