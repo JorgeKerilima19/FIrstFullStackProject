@@ -1,5 +1,7 @@
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import { useState, useEffect } from "react";
+
+import backToTop from "../helpers/backToTop";
 
 import logo from "../assets/images/logo.svg";
 
@@ -29,11 +31,13 @@ export const Navbar = () => {
 
   return (
     <nav
-      className={`w-full z-10 bg-white-500 shadow-sm shadow-red-700 fixed top-0 flex transform ${
-        !showNavbar ? "-translate-y-16 bg-red-700" : ""
-      } transition-transform duration-1000 ease-in-out p-2 justify-between`}
+      className={`w-auto md:w-full z-10 shadow-sm shadow-red-700 fixed top-0 flex flex-col md:flex-row transform h-full md:h-20 ${
+        !showNavbar
+          ? "-translate-x-80 md:-translate-x-0 md:-translate-y-16 md:border-b-red-700 border-b-2 bg-red-700"
+          : "bg-white "
+      } transition-transform duration-1000 ease-in-out p-2 justify-between gap-4`}
     >
-      <Link to={"/"} className="flex gap-2 items-center">
+      <NavLink onClick={backToTop} to={"/"} className="flex gap-2 items-center">
         <img src={logo} alt="logo" width={50} />
         <h1
           className={`text-black-50 font-bold text-2xl ${
@@ -42,45 +46,81 @@ export const Navbar = () => {
         >
           DNews
         </h1>
-      </Link>
+      </NavLink>
       <div
-        className={`flex items-center gap-7 pr-10 ${
+        className={`flex flex-col md:flex-row items-center justify-between gap-4 md:gap-7 md:pr-4 lg:pr-10 ${
           showNavbar ? "" : "hidden"
-        }`}
+        } h-3/4 md:h-auto`}
       >
-        <ul className="flex gap-10 items-center h-full">
+        <ul className="flex flex-col md:flex-row gap-5 lg:gap-10 items-center">
           <li>
-            <Link className="px-2" to={"/cases"}>
+            <NavLink
+              onClick={backToTop}
+              className={(classname) =>
+                classname.isActive ? "px-2 border-b-red-700 border-b-2" : "px-2"
+              }
+              to={"/cases"}
+            >
               Cases
-            </Link>
+            </NavLink>
           </li>
           <li>
-            <Link className="px-2" to={"/services"}>
+            <NavLink
+              onClick={backToTop}
+              className={(classname) =>
+                classname.isActive ? "px-2 border-b-red-700 border-b-2" : "px-2"
+              }
+              to={"/services"}
+            >
               Services
-            </Link>
+            </NavLink>
           </li>
           <li>
-            <Link className="px-2" to={"/about"}>
+            <NavLink
+              onClick={backToTop}
+              className={(classname) =>
+                classname.isActive ? "px-2 border-b-red-700 border-b-2" : "px-2"
+              }
+              to={"/about"}
+            >
               About us
-            </Link>
+            </NavLink>
           </li>
           <li>
-            <Link className="px-2" to={"/careers"}>
+            <NavLink
+              onClick={backToTop}
+              className={(classname) =>
+                classname.isActive ? "px-2 border-b-red-700 border-b-2" : "px-2"
+              }
+              to={"/careers"}
+            >
               Careers
-            </Link>
+            </NavLink>
           </li>
           <li>
-            <Link className="px-2" to={"/blog"}>
+            <NavLink
+              onClick={backToTop}
+              className={(classname) =>
+                classname.isActive ? "px-2 border-b-red-700 border-b-2" : "px-2"
+              }
+              to={"/blog"}
+            >
               Blog
-            </Link>
+            </NavLink>
           </li>
           <li>
-            <Link className="px-2" to={"/contact"}>
+            <NavLink
+              onClick={backToTop}
+              className={(classname) =>
+                classname.isActive ? "px-2 border-b-red-700 border-b-2" : "px-2"
+              }
+              to={"/contact"}
+            >
               Contact us
-            </Link>
+            </NavLink>
           </li>
         </ul>
-        <button className="bg-transparent hover:bg-white-50 text-red-700 font-semibold hover:text-white py-2 px-4 border border-red-700 hover:border-transparent hover:bg-red-700 rounded">
+        <button className="bg-transparent hover:bg-white-50 text-red-700 font-semibold hover:text-white py-2 px-4 border border-red-700 hover:border-transparent hover border-b-red-700 border-b-2 rounded">
           Contact Us
         </button>
       </div>
