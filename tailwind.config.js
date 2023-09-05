@@ -3,9 +3,12 @@ export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     extend: {
-      minHeight:{
-        "vh":"calc(100vh - var(--header-height))"
-      }
+      minHeight: {
+        vh: "calc(100vh - var(--header-height))",
+      },
+      minWidth: {
+        footerItem: "10rem",
+      },
     },
   },
   plugins: [],
