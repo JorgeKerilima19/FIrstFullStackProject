@@ -17,3 +17,20 @@
     rgb(255, 255, 255) 90%
   );
 }
+.hamburger-menu {
+  display: grid;
+  width: 4rem;
+  height: 4rem;
+  z-index: 999;
+  transform: translateX(-70%);
+  left: 70%;
+}
+.hamburger__bar {
+  width: 2rem;
+  height: 0.3rem;
+}
+@media (min-width: 768px) {
+  .hamburger-menu {
+    display: none;
+  }
+}
