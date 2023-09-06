@@ -16,11 +16,11 @@ export const Footer = () => {
           </div>
         </div>
         <div className="flex justify-between flex-wrap gap-10">
-          <div className="min-w-footerItem">
+          <div className="min-w-footerItem flex flex-col gap-5">
             <h3 className="text-lg font-semibold border-b-2 border-b-white">
               Contact us
             </h3>
-            <ul className="grid gap-4 pt-5">
+            <ul className="grid gap-4">
               <li className="border-b-2 border-b-transparent hover:border-b-red-100">
                 Lima-Peru
               </li>
@@ -32,7 +32,7 @@ export const Footer = () => {
               </li>
             </ul>
           </div>
-          <div className="min-w-footerItem grid gap-5">
+          <div className="min-w-footerItem flex flex-col gap-5">
             <h3 className="text-lg font-semibold border-b-2 border-b-white">
               Company
             </h3>
@@ -57,7 +57,7 @@ export const Footer = () => {
               </li>
             </ul>
           </div>
-          <div className="min-w-footerItem grid gap-5">
+          <div className="min-w-footerItem flex flex-col gap-5">
             <h3 className="text-lg font-semibold border-b-2 border-b-white">
               Details
             </h3>
@@ -79,7 +79,7 @@ export const Footer = () => {
               </li>
             </ul>
           </div>
-          <div className="min-w-footerItem grid gap-5">
+          <div className="min-w-footerItem flex flex-col gap-5">
             <h3 className="text-lg font-semibold border-b-2 border-b-white">
               Follow us
             </h3>
