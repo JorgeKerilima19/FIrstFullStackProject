@@ -10,6 +10,12 @@ export default {
         footerItem: "10rem",
         img: "45%",
       },
+      width: {
+        128: "32rem",
+      },
+      height: {
+        128: "32rem",
+      },
     },
   },
   plugins: [],
