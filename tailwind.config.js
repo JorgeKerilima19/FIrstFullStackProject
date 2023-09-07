@@ -9,6 +9,7 @@ export default {
       minWidth: {
         footerItem: "10rem",
         img: "45%",
+        xxs: "16rem",
       },
       width: {
         128: "32rem",
