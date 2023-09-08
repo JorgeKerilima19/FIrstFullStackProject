@@ -11,3 +11,9 @@ export type teamMember = {
   position: string;
   photo: any;
 };
+
+export type careerFeature = {
+  id: number;
+  name: string;
+  description: string;
+};

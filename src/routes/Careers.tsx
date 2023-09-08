@@ -1,4 +1,10 @@
-import { BannerCareers, JobOpening } from "../components/careers/";
+import { Clients } from "../components";
+import {
+  BannerCareers,
+  JobOpening,
+  CultureAndValues,
+  Benefits,
+} from "../components/careers/";
 
 export const Careers = () => {
   return (
@@ -15,6 +21,9 @@ export const Careers = () => {
         <BannerCareers />
       </section>
       <JobOpening />
+      <Clients />
+      <CultureAndValues />
+      <Benefits />
     </>
   );
 };
