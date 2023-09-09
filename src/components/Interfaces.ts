@@ -4,7 +4,8 @@ export interface ChildProps {
 export interface JobApplication {
   jobTitle: string;
   jobLocation: string;
-  jobType: "Full-Time" | "Part-Time" | "Remote";
+  department: "Development" | "Design" | "Analytics";
+  jobType: "Full-Time" | "Part-Time" | "Remote" | "Contract";
   responsibilities: string[];
   qualifications: string[];
   applicationDeadline: Date;

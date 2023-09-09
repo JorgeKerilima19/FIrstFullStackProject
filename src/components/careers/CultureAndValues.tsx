@@ -23,7 +23,7 @@ const values: careerFeature[] = [
 
 export const CultureAndValues = () => {
   return (
-    <section className="pt-20">
+    <section className="pl-5 md:pl-10 pt-20">
       <h3 className="text-4xl font-semibold pb-16">
         Culture and <span className="text-red-700">values</span>
       </h3>

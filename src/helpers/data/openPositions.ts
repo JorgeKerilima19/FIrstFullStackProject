@@ -5,6 +5,7 @@ export const availableJobs: JobApplication[] = [
     jobTitle: "Frontend Developer",
     jobLocation: "New York, NY",
     jobType: "Full-Time",
+    department: "Development",
     responsibilities: [
       "Develop and maintain responsive web applications.",
       "Collaborate with the design team to implement user interfaces.",
@@ -21,6 +22,7 @@ export const availableJobs: JobApplication[] = [
     jobTitle: "UX/UI Designer",
     jobLocation: "Los Angeles, CA",
     jobType: "Full-Time",
+    department: "Design",
     responsibilities: [
       "Create user-centered designs for web and mobile applications.",
       "Conduct user research and usability testing.",
@@ -36,7 +38,8 @@ export const availableJobs: JobApplication[] = [
   {
     jobTitle: "Data Analyst",
     jobLocation: "San Francisco, CA",
-    jobType: "Full-Time",
+    jobType: "Contract",
+    department: "Analytics",
     responsibilities: [
       "Analyze and interpret data to provide actionable insights.",
       "Create data visualizations and reports for stakeholders.",

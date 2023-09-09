@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 export const JobOpening = () => {
   return (
-    <section className="flex flex-wrap justify-between items-center gap-3 py-10 border-t-gray-300 border-t-2 border-b-gray-300 border-b-2">
+    <section className="flex flex-wrap justify-between items-center gap-3 py-10 border-t-gray-300 border-t-2 border-b-gray-300 border-b-2 pl-5 md:pl-10">
       <div className="w-full md:w-2/5 grid gap-5">
         <h3 className="font-medium text-3xl pb-8">
           We want make you proud of your choice

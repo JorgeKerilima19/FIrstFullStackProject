@@ -10,7 +10,7 @@ const perksAndBenefits: careerFeature[] = [
 
 export const Benefits = () => {
   return (
-    <section className="border-t-2 border-t-red-700 pt-16">
+    <section className="pt-16 bg-gray-200 pl-5 md:pl-10">
       <h3 className="text-4xl font-semibold pb-16">
         Perks and <span className="text-red-700">benefits</span>
       </h3>
