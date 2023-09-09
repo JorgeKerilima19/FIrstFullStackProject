@@ -4,6 +4,7 @@ import {
   JobOpening,
   CultureAndValues,
   Benefits,
+  OpenPositions,
 } from "../components/careers/";
 
 export const Careers = () => {
@@ -24,6 +25,7 @@ export const Careers = () => {
       <Clients />
       <CultureAndValues />
       <Benefits />
+      <OpenPositions />
     </>
   );
 };
