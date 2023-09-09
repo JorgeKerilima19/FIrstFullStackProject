@@ -12,3 +12,12 @@ export interface JobApplication {
   salary?: number;
   benefits?: string[];
 }
+export interface PostInterface {
+  title: string;
+  img: any;
+  description: string;
+  date: Date;
+  readingTime: number;
+  category: "Design" | "Development" | "Analytics";
+  author: string;
+}
