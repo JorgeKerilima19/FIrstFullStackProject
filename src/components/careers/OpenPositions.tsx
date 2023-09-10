@@ -13,8 +13,11 @@ export const OpenPositions = () => {
         </p>
       </div>
       <div className="pt-16 w-full grid gap-5 md:w-4/5 m-auto">
-        {availableJobs.map((el) => (
-          <article className="border-2 grid md:grid-cols-2 text-lg p-3 md:p-5 gap-5">
+        {availableJobs.map((el, index) => (
+          <article
+            key={index}
+            className="border-2 grid md:grid-cols-2 text-lg p-3 md:p-5 gap-5"
+          >
             <div className="grid gap-2">
               <header className="font-semibold text-xl">{el.jobTitle}</header>
               <span className="text-base text-green-800 font-medium">
