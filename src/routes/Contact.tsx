@@ -2,29 +2,36 @@ export const Contact = () => {
   return (
     <>
       <section>
-        <form>
-          <header>Want to know more about our prices?</header>
-          <span>
+        <form className="flex flex-col gap-8 md:pt-10">
+          <header className="font-medium text-2xl">
+            Want to know more about our prices?
+          </header>
+          <span className="text-lg">
             Just tell us about your ideas, what your goals are and let's start
             this journey together
           </span>
-          <label htmlFor="name">
+          <label className="grid gap-y-2 text-xl font-semibold" htmlFor="name">
             Name
-            <input type="text" />
+            <input className="border-2 w-5/6 sm:w-60" type="text" />
           </label>
-          <label htmlFor="email">
+          <label className="grid gap-y-2 text-xl font-semibold" htmlFor="email">
             Email
-            <input type="email" />
+            <input className="border-2 w-5/6 sm:w-60" type="email" />
           </label>
-          <label htmlFor="src">
+          <label className="grid gap-y-2 text-xl font-semibold" htmlFor="src">
             Where did your know us from?
-            <input type="text" />
+            <input className="border-2 w-5/6 sm:w-60" type="text" />
           </label>
-          <label htmlFor="message">
+          <label
+            htmlFor="message"
+            className="grid gap-y-2 text-xl font-semibold"
+          >
             Message
-            <textarea />
+            <textarea className="border-2 w-5/6 sm:w-60 resize-none h-36" />
           </label>
-          <button>Send Message</button>
+          <button className="bg-transparent w-36 m-auto hover:bg-red-700 text-red-700 font-semibold hover:text-white py-2 px-4 border border-red-700 hover:border-transparent hover rounded">
+            Send Message
+          </button>
         </form>
       </section>
     </>
