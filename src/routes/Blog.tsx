@@ -5,8 +5,11 @@ export const Blog = () => {
     <section className="pt-5 grid">
       <h2 className="text-4xl font-bold">Blog</h2>
       <div className="py-10 grid justify-center gap-y-5">
-        {posts.map((post) => (
-          <article className="cont grid grid-cols-1 md:grid-cols-3 gap-5 border-b-2 py-5 place-items-center md:place-items-stretch ">
+        {posts.map((post, index) => (
+          <article
+            key={index}
+            className="cont grid grid-cols-1 md:grid-cols-3 gap-5 border-b-2 py-5 place-items-center md:place-items-stretch "
+          >
             <img
               src={post.img}
               alt=""
